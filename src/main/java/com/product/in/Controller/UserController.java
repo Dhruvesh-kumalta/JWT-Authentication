@@ -38,7 +38,7 @@ public class UserController {
     public List<User_Data> getMethodName() {
         return userService.getUsersByUsername();
     }
-    @PutMapping("path/{id}")
+    @PutMapping("/{id}")
     public User_Data putMethodName(@PathVariable Long id, @RequestBody User_Data entity) {
           return userService.updateUser(id, entity);
     }
