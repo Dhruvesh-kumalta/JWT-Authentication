@@ -34,7 +34,7 @@ public class UserController {
         return userService.getUsersByUsername();
     }
     
-    @GetMapping("/")
+    @GetMapping("/all")
     public List<User_Data> getMethodName() {
         return userService.getUsersByUsername();
     }

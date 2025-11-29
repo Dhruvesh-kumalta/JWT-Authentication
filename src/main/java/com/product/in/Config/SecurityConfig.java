@@ -40,7 +40,7 @@ public class SecurityConfig {
 	            .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
 	            .build();
 	}
-    
+  
     UserDetailsService userDetailsService() {
     	return new CustomUserDetailService();
     }
